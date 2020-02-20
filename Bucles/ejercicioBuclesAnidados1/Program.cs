@@ -6,7 +6,9 @@ namespace ejercicioBuclesAnidados1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Ejercicio con bucles anidados, asignaremos datos numéricos a una array y despues ordenaremos estos con un bucle anidado.
+
+
         }
     }
 }

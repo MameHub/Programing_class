@@ -12,7 +12,7 @@ namespace proyectoMix
             int n;
             do
             {
-                Console.WriteLine("Que quiereh mi alma \t 1. Refrán \n 2. Chiste \n  3. Insulto \n 4. Salir.");
+                Console.WriteLine("Que quiereh mi alma \n \t 1. Refrán \n \t 2. Chiste \n \t 3. Insulto \n \t 4. Salir.");
                 n = int.Parse(Console.ReadLine());
 
                 switch (n)
