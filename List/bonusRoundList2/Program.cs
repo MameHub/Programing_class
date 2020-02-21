@@ -39,6 +39,7 @@ namespace bonusRoundList2
                 }
             }
             
+            // foreach con string.
             /*
             string nombre = "Alvaro";
             foreach (char letter in nombre)
