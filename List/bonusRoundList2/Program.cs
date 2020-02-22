@@ -9,7 +9,8 @@ namespace bonusRoundList2
         {
             // Ejercicio de devolver si el número introducido es par o inpar pero on listas.
             // Extra intentar hacer que el usuario proporcione los datos de la lista.
-            Console.Write("Introduce el primer número: ");
+
+            /*Console.Write("Introduce el primer número: ");
             int num1 = int.Parse(Console.ReadLine());
             Console.Write("Introduce el segundo número: ");
             int num2 = int.Parse(Console.ReadLine());
@@ -19,13 +20,23 @@ namespace bonusRoundList2
             int num4 = int.Parse(Console.ReadLine());
             Console.Write("Introduce el quinto número: ");
             int num5 = int.Parse(Console.ReadLine());
+            */
+            
+            Console.Write("Introduce la cantidad de números que quieres introducir: ");
+            int cantidad = int.Parse(Console.ReadLine());
+            int[] numeros = new int[cantidad];
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                Console.Write("Introduzca un número: ");
 
+            }
+            
             List<int> parInpar = new List<int>();
-            parInpar.Add(num1);
-            parInpar.Add(num2);
-            parInpar.Add(num3);
-            parInpar.Add(num4);
-            parInpar.Add(num5);
+            parInpar.Add(cantidad);
+            parInpar.Add(cantidad);
+            parInpar.Add(cantidad);
+            parInpar.Add(cantidad);
+            parInpar.Add(cantidad);
             
             foreach (var numbers in parInpar)
             {
