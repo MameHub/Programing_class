@@ -63,6 +63,9 @@ namespace ConditionalStatements5
                 case 10:
                     Console.WriteLine("Sobresaliente.");
                     break;
+                default:
+                    Console.WriteLine("Nota incorrecta.");
+                    break;
             }
         }
     }
