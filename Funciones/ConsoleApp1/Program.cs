@@ -11,9 +11,8 @@ namespace ConsoleApp1
 
             int x;
             int y;
-            
-            Console.Write("Introduzca que operación desea realizar: ");
-            int op = 0;
+
+            int op;
 
             do
             {
@@ -22,20 +21,19 @@ namespace ConsoleApp1
                 Console.Write("Introduzca el segundo número: ");
                 y = int.Parse(Console.ReadLine());
                 Console.WriteLine(" Introduzca la operación que desea realizar: \n 1.- Suma. \n 2.- Resta. \n 3.- Multiplicación. \n 4.- División. \n 5.- Salir");
-                switch (op)
+                switch (op = int.Parse(Console.ReadLine()))
                 {
                     case 1:
-                        int totalSuma = x + y;
-                        Console.WriteLine("El resultado de la suma es: " + totalSuma + ".");
+                        Console.WriteLine("El resultado de la suma es: " + (x + y) + ".");
                         break;
                     case 2:
-                        int totalResta = x - y;
+                        Console.WriteLine("El resultado de la resta es: " + (x - y) + ".");
                         break;
                     case 3:
-                        int totalMultiplicacion = x * y;
+                        Console.WriteLine("El resultado de la multiplicación es: " + (x * y) + ".");
                         break;
                     case 4:
-                        int totalDivision = x / y;
+                        Console.WriteLine("El resultado de la división es: " + (x / y) + ".");
                         break;
                     case 5:
                         Console.WriteLine("Hasta luego.");
