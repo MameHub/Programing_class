@@ -26,6 +26,7 @@ namespace ConsoleApp1
                 string nombre = Console.ReadLine();
                 Console.Write("Introduzca una nota: ");
                 float nota = float.Parse(Console.ReadLine());
+                alumnos[i] = new Alumno(nombre, nota);
             }
             Console.WriteLine();
             Console.WriteLine();
