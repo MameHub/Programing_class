@@ -5,7 +5,7 @@ namespace ConsoleApp1
     class Program
     {
         static void Main(string[] args)
-        { 
+        {
             //Console.Write("Introduzca su nombre: ");
             //string nombre = Console.ReadLine();
             //Console.Write("Introduzca una nota: ");
@@ -34,6 +34,16 @@ namespace ConsoleApp1
             {
                 alumnos[i].MostrarDatos();
             }
+
+            float total = 0;
+            for (int i = 0; i < alumnos.Length; i++)
+            {
+                total += alumnos[i].nota;
+                alumnos[i].MostrarDatos();
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("La media es: " + (total / alumnos.Length));
         }
     }
 }
