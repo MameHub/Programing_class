@@ -12,6 +12,13 @@ namespace ConsoleApp3
             // 3.- Salir. Struct -> Transacción.
             // class -> Cliente.
             // clase -> bank
+
+            Transaccion transaccion = new Transaccion(20, "Porque si");
+            Cuenta cuenta = new Cuenta("Álvaro");
+            cuenta.AñadirTransaccion(transaccion);
+            cuenta.AñadirTransaccion(transaccion);
+            cuenta.AñadirTransaccion(transaccion);
+            cuenta.MostrarTransacciones();
         }
     }
 }
